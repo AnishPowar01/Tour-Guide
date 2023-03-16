@@ -10,7 +10,7 @@ function Tours({tours,removeTour}) {
      {
         tours.map((tour) =>{
             return (
-                <Card {...tour} removeTour = {removeTour} />
+                <Card key={tour.id} {...tour} removeTour = {removeTour} />
             )
         })
      }
